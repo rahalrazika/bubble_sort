@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-git_source(:github) { |bubble_sort| "https://github.com/#{bubble_sort}" }
+# Use rubocop
 gem 'rubocop', '~>0.81.0'
-
-# gem "rails"
