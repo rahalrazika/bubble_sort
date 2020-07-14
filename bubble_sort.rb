@@ -10,4 +10,4 @@ def bubble_sort(arr)
   end
   arr
 end
-p bubble_sort([12, 10, 78, 2, 0, 2])
+print bubble_sort([12, 10, 78, 2, 0, 2])
