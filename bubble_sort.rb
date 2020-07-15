@@ -11,3 +11,23 @@ def bubble_sort(arr)
   arr
 end
 print bubble_sort([12, 10, 78, 2, 0, 2])
+
+def bubble_sort_by(arr)
+  i = 0
+  while i > arr.length - 1
+    b  = yield arr[i], arr[i+ 1]
+    if b > 0
+      arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    end
+  end
+  arr
+end
+
+arr = %w[hello hey hi]
+p arr
+bubble_sort_by(arr) do |left, right|
+  left.length - right.length
+end
+
+
+puts bubble_sort_by
