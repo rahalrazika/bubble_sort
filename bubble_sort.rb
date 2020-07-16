@@ -10,7 +10,7 @@ def bubble_sort(arr)
   end
   arr
 end
-p bubble_sort([12, 10, 78, 2, 0, 2])
+bubble_sort([12, 10, 78, 2, 0, 2])
 
 def bubble_sort_by(arr)
   i = 0
@@ -24,6 +24,6 @@ def bubble_sort_by(arr)
   end
   arr
 end
-p bubble_sort_by(%w[hi hello hey]) { |left, right|
+bubble_sort_by(%w[hi hello hey]) { |left, right|
   left.length - right.length
 }
